@@ -9,20 +9,15 @@ sudo ufw app list
 sudo ufw allow 'Nginx HTTP'
 sudo ufw status
 
-# Verifica o status do Nginx
-systemctl status nginx
-
-# Pausa para permitir ao usuário sair do status do Nginx
-read -p "Pressione a tecla 'q' e Enter para sair do status do Nginx."
 
 # Instalação de pacotes adicionais
 sudo apt-get install bind9 php7.2-fpm php7.2-common php7.2-mbstring php7.2-xmlrpc php7.2-soap php7.2-gd php7.2-xml php7.2-intl php7.2-mysql php7.2-cli php7.2-zip php7.2-curl -y
 
 # Configuração dos arquivos e serviços
-sudo cp -r ~/home/stb/nginx/* /etc/nginx/
-sudo cp -r ~/home/stb/bdstb/* /var/www/html/
+sudo cp -r /home/stb/nginx/* /etc/nginx/
+sudo cp -r /home/stb/bdstb/* /var/www/html/
 sudo rm /var/www/html/index.html
-sudo cp -r ~/home/stb/bdstb/* /usr/share/nginx/html/
+sudo cp -r /home/stb/bdstb/* /usr/share/nginx/html/
 sudo rm /usr/share/nginx/html/index.html
 
 # Reinicia os serviços Nginx e Bind 9
