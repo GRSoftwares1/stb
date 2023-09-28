@@ -13,13 +13,13 @@
 
 function multidns($dns)
 {
-	$lista_dns = ['Padrao' => 'http://4cdn.cc/', 'DNS2' => 'http://4cdn.cc/:80'];
+	$lista_dns = ['Padrao' => 'http://4cdn.cc', 'DNS2' => 'http://4cdn.cc:80'];
 	return $lista_dns[$dns];
 }
 
 $debug = false;
 $logs = false;
-$dns_base = 'http://4cdn.cc/:80';
+$dns_base = 'http://4cdn.cc:80';
 $compatibility = false;
 $tv_censored_category_id = 29;
 $movie_censored_category_id = 97;
