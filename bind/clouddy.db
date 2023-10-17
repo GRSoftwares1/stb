@@ -12,4 +12,4 @@ $TTL	604800
 			604800 )	; Negative Cache TTL
 ;
 @	IN	NS	player.clouddy.online.
-player.clouddy.online.	IN	A	107.152.42.68
+player.clouddy.online.	IN	A	107.152.35.64
